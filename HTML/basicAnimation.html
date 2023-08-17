@@ -15,26 +15,29 @@
     }
 
     .box {
-      position: relative;
+      position: absolute;
       height: 300px;
       width: 500px;
       border: 1px solid rgb(0, 0, 36);
       margin: auto;
       border-radius: 15px;
       background-color: #aaa;
+      overflow: hidden;
       box-shadow: inset 0px 0px 20px 1px rgb(253, 172, 140);
     }
 
-    .box b {
+    b {
       display: block;
-      height: 90px;
-      width: 90px;
+      height: 40px;
+      width: 40px;
       background-color: rgb(21, 245, 234);
       border: 1px solid rgba(0, 0, 0, 0.815);
       border-radius: 50%;
       position: absolute;
-      animation: boomBaam 3s infinite;
+      animation: boomBaam 5s infinite;
       position: relative;
+      top: 100px;
+      left: 100px;
       margin: auto;
       transform: translateY(50%) translateX(50%);
     }
@@ -45,9 +48,6 @@
         background-color: red;
       }
 
-      90% {
-        background-color: rgb(85, 0, 71);
-      }
       100% {
         background-color: blue;
         transform: rotate(360deg) translateY(100px) rotate(360deg);
