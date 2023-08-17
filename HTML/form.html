@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* text-align: center; */
+        margin: 48px 96px;
+      }
+      form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 14px;
+        border-radius: 8px;
+        width: 200px;
+        gap: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="Name">Name</label>
+      <input type="text" id="Name" name="Name" />
+      <label>Date of Birth</label>
+      <input type="date" />
+      <label>Email</label>
+      <input type="email" />
+      <label>Phone Number</label>
+      <input type="number" />
+      <label>Password</label>
+      <input type="password" />
+      <label>Sex:</label>
+      <input type="radio" />
+      <label>Male</label>
+      <input type="radio" />
+      <label>Female</label>
+      <select>
+        <option>Youtube</option>
+        <option>Insta</option>
+        <option>Facebook</option>
+      </select>
+      <label>Message for us:</label>
+      <textarea>Amazing!</textarea>
+      <input type="textarea" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chessboard</title>
+    <style>
+      body {
+        margin: 48px 96px;
+        background-color: antiquewhite;
+      }
+      .board {
+        margin: auto;
+        background-color: rgb(153, 148, 172);
+        height: 600px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+      .chessboard {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        border: 2px solid black;
+      }
+
+      .chessboard > div {
+        height: 70px;
+        width: 70px;
+        border: 2px solid black;
+      }
+      .squares:nth-child(odd) {
+        background-color: rgb(219, 219, 219);
+      }
+      .squares:nth-child(even) {
+        background-color: rgb(0, 0, 0);
+      }
+      .squaresRow1:nth-child(even) {
+        background-color: rgb(219, 219, 219);
+      }
+      .squaresRow1:nth-child(odd) {
+        background-color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <div class="chessboard">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+      </div>
+      <div class="chessboard">
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+      </div>
+      <div class="chessboard">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+      </div>
+      <div class="chessboard">
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+        <div class="squaresRow1"></div>
+      </div>
+    </div>
+  </body>
+</html>
