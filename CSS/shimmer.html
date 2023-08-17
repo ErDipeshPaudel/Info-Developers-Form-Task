@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Skimming</title>
+    <style>
+      * {
+        background-color: aliceblue;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(255, 252, 247);
+        border: 1px solid rgb(1, 1, 44);
+        box-shadow: 2px 1px 10px rgb(231, 227, 224);
+        overflow: hidden;
+      }
+      b {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        animation: dipeshSkimming 1s infinite;
+        display: block;
+      }
+
+      @keyframes dipeshSkimming {
+        0% {
+          right: 300px;
+        }
+        50% {
+          background-color: rgb(241, 243, 245);
+        }
+        100% {
+          right: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div><b></b></div>
+  </body>
+</html>
