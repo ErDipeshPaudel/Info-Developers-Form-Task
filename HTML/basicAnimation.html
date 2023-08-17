@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(245, 219, 184);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      position: relative;
+      height: 300px;
+      width: 500px;
+      border: 1px solid rgb(0, 0, 36);
+      margin: auto;
+      border-radius: 15px;
+      background-color: #aaa;
+      box-shadow: inset 0px 0px 20px 1px rgb(253, 172, 140);
+    }
+
+    .box b {
+      display: block;
+      height: 90px;
+      width: 90px;
+      background-color: rgb(21, 245, 234);
+      border: 1px solid rgba(0, 0, 0, 0.815);
+      border-radius: 50%;
+      position: absolute;
+      animation: boomBaam 3s infinite;
+      position: relative;
+      margin: auto;
+      transform: translateY(50%) translateX(50%);
+    }
+
+    @keyframes boomBaam {
+      0% {
+        transform: rotate(0deg) translateY(100px) rotate(0deg);
+        background-color: red;
+      }
+
+      90% {
+        background-color: rgb(85, 0, 71);
+      }
+      100% {
+        background-color: blue;
+        transform: rotate(360deg) translateY(100px) rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="box">
+      <b></b>
+    </div>
+  </body>
+</html>
