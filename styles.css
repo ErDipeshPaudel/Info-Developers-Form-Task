@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #2e2e2e;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 199, 199);
+  padding: 0.5rem 1rem;
+}
+
+input {
+  padding: 0.5rem 8rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn {
+  background-color: black;
+  color: #aaa;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd;
+  height: 3.2rem;
+  align-items: center;
+}
+
+.nav-parts {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  padding: 2.4rem;
+}
+
+.nav-parts a {
+  color: rgb(56, 56, 56);
+  font-weight: 600;
+}
+
+.invites a {
+  color: #646363;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+}
+
+aside {
+  background-color: #ddd;
+}
+
+aside h2 {
+  background-color: rgb(12, 199, 199);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  margin: 0;
+}
+
+aside p {
+  color: #646363;
+  padding: 0 1.2rem;
+}
+
+main h1 {
+  margin: 0 0 1rem 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 4px solid rgb(12, 199, 199);
+  gap: 8px;
+}
+
+.separator-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  padding: 1rem 5rem 0 5rem;
+  text-align: center;
+}
+
+.right {
+  border-top-right-radius: 12px;
+}
+
+.left {
+  border-top-left-radius: 12px;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.tab p {
+  font-size: 0.8rem;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  margin: 0;
+}
+
+img {
+  width: 70px;
+  height: 80px;
+}
+
+.people {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.first-person {
+  padding-top: 1rem;
+}
+
+.person-detail {
+  line-height: 0.2rem;
+}
+.highlight {
+  background-color: rgb(12, 199, 199);
+}
+
+.no-highlight {
+  background-color: #aaa;
+}
+span {
+  color: blue;
+}
+
+.downloads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.8rem;
+}
+
+hr {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
